@@ -1,4 +1,4 @@
-import javax.lang.model.element.NestingKind;
+package basic;
 
 public class DuplicateString {
     public static void main(String[] args) {

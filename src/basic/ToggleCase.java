@@ -1,3 +1,5 @@
+package basic;
+
 public class ToggleCase {
 
     public static void main(String[] args) {
