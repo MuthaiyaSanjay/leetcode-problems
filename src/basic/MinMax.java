@@ -3,6 +3,7 @@ package basic;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -20,33 +21,12 @@ public class MinMax {
         List<Integer> arr = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
                 .map(Integer::parseInt)
                 .collect(toList());
-
-        MinMax.approach1(arr);
-        MinMax.approach2(arr);
+        MinMax.minMax(arr);
 
         bufferedReader.close();
     }
 
-
-    private static void approach1(List<Integer> arr) {
-        int[] sum = new int[arr.size()];
-        for (int i = 0; i < arr.size(); i++) {
-            int add = 0;
-            for (int j = 0; j < arr.size(); j++) {
-                if (i == j) {
-                    continue;
-                }
-                add += arr.get(j);
-            }
-            System.out.println("add :: " + add);
-            sum[i] = add;
-        }
-        Arrays.sort(sum);
-        System.out.print(sum[sum.length - 1] + " " + sum[0]);
-    }
-
-
-    private static void approach2(List<Integer> arr) {
+    private static void minMax(List<Integer> arr) {
         Collections.sort(arr);
 
         // Calculate the sum of all elements
