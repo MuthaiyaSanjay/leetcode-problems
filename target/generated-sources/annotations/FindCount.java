@@ -1,4 +1,4 @@
-package basic;
+package hackerRank;
 
 
 public class FindCount {

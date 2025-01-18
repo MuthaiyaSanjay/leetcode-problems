@@ -24,7 +24,7 @@
             <version>5.2.3</version> <!-- Or the latest version -->
         </dependency>
 
-        <!-- Apache POI for basic.Excel files in .xls format (optional) -->
+        <!-- Apache POI for hackerRank.Excel files in .xls format (optional) -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
