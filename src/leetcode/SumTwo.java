@@ -15,7 +15,7 @@ public class SumTwo {
             System.out.println("No solution found.");
         }
     }
-
+// Make the changes
     public static int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
 //        int[] nums = {2, 8, 11, 5};
